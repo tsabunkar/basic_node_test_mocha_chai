@@ -5,17 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
-    "test2" :"mocha **/*.test.js",
+    "test2": "mocha **/*.test.js",
     "test-watch2": "nodemon --exec \"npm run test2\" ",
     "test-watch": "nodemon --exec \"npm test\" "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
     "lodash": "^4.17.10"
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
   }
 }
